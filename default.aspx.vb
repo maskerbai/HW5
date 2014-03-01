@@ -80,4 +80,9 @@ Partial Class _Default
 
     End Sub
 
+    Protected Sub btn_clear_Click(sender As Object, e As EventArgs) Handles btn_clear.Click
+
+
+       
+    End Sub
 End Class

@@ -17,17 +17,32 @@
      
         Loan Amount:<asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
                   
+        *
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbLoanAmt" ErrorMessage="Please Enter Required Information"></asp:RequiredFieldValidator>
+                  
         <br /><br />      
         
         Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
+        
+        *
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbAnnualInterest" ErrorMessage="Please Enter Required Information"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="tbAnnualInterest" ErrorMessage="Please Enter a Number that Lower than 20" Operator="LessThan" Type="Double" ValueToCompare="20"></asp:CompareValidator>
         
         <br /><br />
 
         Loan Term (Yrs): <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
         
-        <br /><br />
+        *
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbLoanTerm" ErrorMessage="Please Enter Required Information"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator2" runat="server" BorderStyle="None" ControlToValidate="tbLoanTerm" EnableTheming="True" ErrorMessage="Please Enter a Integer that larger that 1" Operator="GreaterThanEqual" Type="Integer" ValueToCompare="1"></asp:CompareValidator>
+        <br />
+        <br />
+        * Indicate the Required Information <br /><br />
 
         <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btn_clear" runat="server" Text="Clear" Width="82px" />
         
         <br /><br />
                 

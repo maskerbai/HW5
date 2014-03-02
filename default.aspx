@@ -4,17 +4,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Jintan's Mortgage Calculator</title>
 
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
     
-    Mike's Mortgage Calculator
-        
-        <br /><br />
+    <h3>
+    Jintan's Mortgage Calculator</h3>
+        <div id="content">
+       
+        <hr/>
+            <br />
+            
      
+
         Loan Amount:<asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
                   
         *
@@ -44,14 +48,21 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btn_clear" runat="server" Text="Clear" Width="82px" />
         
-        <br /><br />
-                
+        <%If Not IsPostBack Then%>
+            <p>Welcome to my calculator. Please complete the above fields to get your monthly payment and loand repayment schedule cacluated for you. </p>
+        <% Else%>
+
+        <br /><br />            
+        <div id="clearcontent" runat="server">>  
         Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label>
         
         <br /><br />
         
-        <asp:GridView ID="loanGridView" runat="server" />
-            
+        <asp:GridView ID="loanGridView" runat="server" >
+            <AlternatingRowStyle />
+            </asp:GridView>
+        </div>
+        <%end if %>    
         </div>
     </form>
 </body>

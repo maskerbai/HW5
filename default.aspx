@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Jintan's Mortgage Calculator</title>
-    <link rel="stylesheet" type="text/css" href="CalStyleSheet.css" /></head>
+    <link rel="stylesheet" type="text/css" href="CalStyleSheet.css" />
+</head>
 <body>
     <form id="form1" runat="server">
     <div id="content">
@@ -57,7 +58,8 @@
         
         <br /><br />
         
-        <asp:GridView ID="loanGridView" runat="server" BorderColor="#660066" BorderStyle="Solid" BorderWidth="3px" >
+        <asp:GridView ID="loanGridView" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" >
+            <RowStyle CssClass="Row" />
             <AlternatingRowStyle CssClass="alt" BorderColor="#660033"/>
             </asp:GridView>
 

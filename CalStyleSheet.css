@@ -25,8 +25,15 @@
                
 }
 
-    #loanGridView .alt:hover {background-color:aqua;
+
+
+    #loanGridView .Row:hover {background-color:aqua;
     }
 
-    #loanGridView .row:hover {background-color: aqua;
+    #loanGridView .alt:hover {background-color:aqua;
     }
+    #loanGridView .Row{background-color:#DCFA70;
+    }
+
+    /*#loanGridView .alt {background-color:#689CD2;
+    }*/

@@ -84,6 +84,7 @@ Partial Class _Default
 
         loanGridView.DataSource = loanAmortTbl
         loanGridView.DataBind()
+        loanGridView.Visible = True
 
 
     End Sub

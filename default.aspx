@@ -57,9 +57,10 @@
         
         <br /><br />
         
-        <asp:GridView ID="loanGridView" runat="server" >
-            <AlternatingRowStyle />
+        <asp:GridView ID="loanGridView" runat="server" BorderColor="#660066" BorderStyle="Solid" BorderWidth="3px" >
+            <AlternatingRowStyle CssClass="alt" BorderColor="#660033"/>
             </asp:GridView>
+
         </div>
         <%end if %>    
         </div>

@@ -5,14 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Jintan's Mortgage Calculator</title>
-
-</head>
+    <link rel="stylesheet" type="text/css" href="CalStyleSheet.css" /></head>
 <body>
     <form id="form1" runat="server">
-    
+    <div id="content">
     <h3>
     Jintan's Mortgage Calculator</h3>
-        <div id="content">
+        
        
         <hr/>
             <br />

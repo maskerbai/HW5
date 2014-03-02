@@ -93,9 +93,12 @@ Partial Class _Default
         tbAnnualInterest.Text = String.Empty
         tbLoanAmt.Text = String.Empty
         tbLoanTerm.Text = String.Empty
+        lblMonthlyPmt.Text = String.Empty
 
         'System.Web.UI.WebControls.DataGrid. = False
         'clearcontent.visible = False
+        loanGridView.Visible = False
+
 
     End Sub
 End Class

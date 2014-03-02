@@ -1,2 +1,19 @@
 ﻿body {
+    background-image: url(house.jpg);
+    font-family:Arial,Verdana;
+}
+#form1 {background-color:azure;
+        width:1000px;
+         margin:auto;
+         padding-bottom:10px;
+         padding-left:10px;
+         padding-right:10px;
+         padding-top:10px;
+         border-left: solid 15px black; 
+         border-right: solid 15px black;
+         border-top: solid 15px black; 
+         border-bottom: solid 15px black; 
+}
+
+
 }
